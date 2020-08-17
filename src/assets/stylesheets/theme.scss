@@ -16,6 +16,6 @@ $enable-gradients:true;
 $spacer:1.2rem;
 $border-width:1px;
 $btn-border-radius:1.35rem;
-@import "bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // Add SASS theme customizations here..
