@@ -1,0 +1,21 @@
+/*! `Custom` Bootstrap 4 theme */
+@import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:200,300,400,700);
+$headings-font-family:Quicksand;
+
+$enable-grid-classes:false;
+$primary:#663399;
+$secondary:#868e96;
+$success:#28a745;
+$danger:#dc3545;
+$info:#17a2b8;
+$warning:#ffc107;
+$light:#f8f9fa;
+$dark:#343434;
+$enable-gradients:true;
+$spacer:1.2rem;
+$border-width:1px;
+$btn-border-radius:1.35rem;
+@import "bootstrap";
+
+// Add SASS theme customizations here..
