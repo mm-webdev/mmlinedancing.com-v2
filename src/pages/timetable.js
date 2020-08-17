@@ -1,15 +1,11 @@
-import React from "react";
+import React from "react"
 
 // Importing the Bootstrap CSS created with Themestr.app
-import '../stylesheets/theme.scss';
+import "../stylesheets/theme.scss"
 
 // Importing componants
-import Layout from '../componants/layout';
+import Layout from "../componants/layout"
 
-const timetable = () => (
-  <Layout>
-  
-  </Layout>
-);
+const timetable = () => <Layout></Layout>
 
-export default timetable;
+export default timetable

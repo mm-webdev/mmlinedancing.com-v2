@@ -10,11 +10,5 @@ import dances from "./dances"
 
 export default createSchema({
   name: "default",
-  types: schemaTypes.concat([
-      settings,
-      timetable,
-      dances,
-      nav,
-      socials
-  ]),
+  types: schemaTypes.concat([settings, timetable, dances, nav, socials]),
 })

@@ -1,6 +1,6 @@
 /*! `Custom` Bootstrap 4 theme */
 @import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
-@import url(https://fonts.googleapis.com/css?family=Quicksand:200,300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Quicksand:200,300,400,700');
 $headings-font-family:Quicksand;
 
 $enable-grid-classes:false;
@@ -17,6 +17,9 @@ $spacer:1.2rem;
 $border-width:1px;
 $btn-border-radius:1.35rem;
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./theme.css";
+
+$enable-grid-classes: true !default;
 
 footer {
     position: fixed;
@@ -30,6 +33,11 @@ footer a {
     font-size: 1.5em !important;
 }
 
-.heading {
-    padding-left: 5em;
+h1, h2, h3, h4, h5, h6 {
+    color: $primary;
+    font-weight: 700;
+}
+
+main {
+    margin-bottom: 52px;
 }

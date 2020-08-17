@@ -8,7 +8,7 @@ import Layout from "../componants/layout"
 
 const index = () => (
   <Layout>
-    <Container as="main" className="text-center">
+    <Container as="section" className="text-center">
       <Image
         src="images\mmlinedancing-logo.png"
         alt="Logo"
@@ -16,16 +16,12 @@ const index = () => (
         fluid
       />
       <Row className="px-3">
-        <h3>
-          Line dance classes with Michelle
-          </h3>
-          </Row>
-        <Row>
-          <h4 class="text-muted pt-5">
-            All levels welcome. No dance experience or partners necessary.
-          </h4>
-
-
+        <h3>Line dance classes with Michelle</h3>
+      </Row>
+      <Row>
+        <h4 class="text-muted pt-2">
+          All levels welcome. No dance experience or partners necessary.
+        </h4>
       </Row>
     </Container>
   </Layout>
