@@ -68,6 +68,7 @@ export default function Contact() {
             type="checkbox"
             label="Send a copy to me"
             name="contactForm.CheckCopySend"
+            defaultChecked="true"
             className="text-muted text-italic"
             onChange={handleChange} 
           />
