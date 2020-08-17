@@ -1,7 +1,8 @@
 export default {
   title: "Navigation Links",
   name: "nav",
-  type: "document",
+  type: "object",
+  __experimental_actions: ['update', 'publish', /* 'create', 'delete' */],
   fields: [
     {
       title: "Page Name",
