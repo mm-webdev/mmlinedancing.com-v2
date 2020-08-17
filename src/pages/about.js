@@ -14,13 +14,16 @@ const about = () => (
     <Container as="heading">
       <h1 className="text-center">About Me</h1>
     </Container>
-    <Container fluid>
-      <Row className="d-flex">
-        <Col>
-          <img className="p-2 border border-primary" src="images/about.jpg" />
-        </Col>
-        <Col>
+    <Container>
+      <Row>
+        <Col lg={8}>
           <p className="text-left p-2 text-about">Insert text here.</p>
+        </Col>
+        <Col lg={4}>
+          <img
+            className="p-2 m-2 border border-primary rounded img-fluid"
+            src="images/about.jpg"
+          />
         </Col>
       </Row>
     </Container>

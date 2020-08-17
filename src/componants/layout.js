@@ -11,9 +11,7 @@ export default function Layout({ children }) {
   return (
     <body>
       <Navigation />
-      <Container as="main" className="p-3">
-        {children}
-      </Container>
+      <Container as="main">{children}</Container>
       <Footer />
     </body>
   )

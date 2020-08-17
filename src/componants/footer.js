@@ -1,10 +1,8 @@
 import React from "react"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
 import Nav from "react-bootstrap/Nav"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import library from '../fontawesome'
+import library from "../fontawesome"
 
 const Footer = () => (
   <Nav as="footer" className="justify-content-center" variant="light">

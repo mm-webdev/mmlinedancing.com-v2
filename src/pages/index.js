@@ -12,16 +12,16 @@ const index = () => (
       <Image
         src="images\mmlinedancing-logo.png"
         alt="Logo"
-        className="mx-auto py-5 d-block"
+        className="mx-auto d-block"
         fluid
       />
-      <Row className="px-3">
-        <h3>Line dance classes with Michelle</h3>
+      <Row className="mx-auto d-block">
+        <h2>Line dance classes with Michelle</h2>
       </Row>
-      <Row>
-        <h4 class="text-muted pt-2">
+      <Row className="mx-auto d-block pt-2">
+        <h2 className="text-secondary text-italic">
           All levels welcome. No dance experience or partners necessary.
-        </h4>
+        </h2>
       </Row>
     </Container>
   </Layout>
