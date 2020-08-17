@@ -6,13 +6,13 @@ import "../stylesheets/theme.scss"
 // Importing componants
 import Layout from "../componants/layout"
 
-const fourOhFour = () => (
+const submitted = () => (
   <Layout>
-    <h1 className="display-3">
-    You have reached an error page. Please choose another adventure from the
-        navigation menu.
+
+      <h1 className="display-3">
+        Thankyou for your enquiry. Your request has been submitted to Michelle directly, and she will get back to you as soon as she can.
       </h1>
   </Layout>
 )
 
-export default fourOhFour
+export default submitted
