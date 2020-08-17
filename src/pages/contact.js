@@ -60,7 +60,7 @@ export default function Contact() {
         </Form.Group>
         <Form.Group controlId="contactForm.Body">
           <Form.Label>Details</Form.Label>
-          <Form.Control name="contactForm.EmailSubject" as="textarea" rows="5" onChange={handleChange}  required={true} />
+          <Form.Control name="contactForm.Body" as="textarea" rows="5" onChange={handleChange}  required={true} />
         </Form.Group>
 
         <Form.Group controlId="contactForm.CheckCopySend">
@@ -68,7 +68,6 @@ export default function Contact() {
             type="checkbox"
             label="Send a copy to me"
             name="contactForm.CheckCopySend"
-            defaultChecked="true"
             className="text-muted text-italic"
             onChange={handleChange} 
           />
