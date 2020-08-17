@@ -43,7 +43,9 @@ export default function Contact() {
       <Container as="heading">
         <h1 className="text-center">Contact Me</h1>
       </Container>
-      <Form action="/submitted/"
+      <Form 
+        name="contactForm"
+        action="/submitted/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}>
