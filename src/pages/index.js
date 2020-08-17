@@ -1,13 +1,18 @@
-import React from "react"
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
 
-// Importing the Bootstrap CSS created with Themestr.app
-import '../assets/stylesheets/theme.scss';
+// Importing componants
+import Layout from '../componants/layout';
 
-// // Importing componants
-import Navigation from '../componants/navbar'
+const index = () => (
+  <Layout>
+       <Image src="images\mmlinedancing-logo.png" alt="Logo" className="mx-auto d-block" />
+  <Container className="text-center">
+    <h1>Line dance classes with Michelle<br />
+    <small class="text-muted">All levels welcome. No dance experience or partners necessary.</small></h1>
+    </Container>
+  </Layout>
+);
 
-const App = () => (
-  <Navigation />
-)
-
-export default App
+export default index;

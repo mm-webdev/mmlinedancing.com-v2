@@ -16,6 +16,16 @@ $enable-gradients:true;
 $spacer:1.2rem;
 $border-width:1px;
 $btn-border-radius:1.35rem;
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Add SASS theme customizations here..
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: $primary;
+}
+
+footer a {
+    color: $light;
+    font-size: 1.5em !important;
+}
