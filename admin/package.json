@@ -25,6 +25,7 @@
     "prop-types": "^15.6",
     "react": "^16.2",
     "react-dom": "^16.2",
+    "sanity-plugin-light-theme": "^1.0.1",
     "sanity-plugin-media": "^0.2.13"
   },
   "devDependencies": {},

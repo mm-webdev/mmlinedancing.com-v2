@@ -1628,8 +1628,8 @@
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
 
 "@types/node@*":
-  version "14.0.27"
-  resolved "https://registry.npmjs.org/@types/node/-/node-14.0.27.tgz#a151873af5a5e851b51b3b065c9e63390a9e0eb1"
+  version "14.6.0"
+  resolved "https://registry.npmjs.org/@types/node/-/node-14.6.0.tgz#7d4411bf5157339337d7cff864d9ff45f177b499"
 
 "@types/node@^8.0.0":
   version "8.10.62"
@@ -6729,8 +6729,8 @@ querystring@0.2.0, querystring@^0.2.0:
   resolved "https://registry.npmjs.org/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
 
 querystringify@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
 
 raf@^3.1.0:
   version "3.4.1"
@@ -7422,6 +7422,10 @@ safe-regex@^1.1.0:
 same-origin@^0.1.1:
   version "0.1.1"
   resolved "https://registry.npmjs.org/same-origin/-/same-origin-0.1.1.tgz#c2287d3192577df517acbbd6d1451a9c3c3914f5"
+
+sanity-plugin-light-theme@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/sanity-plugin-light-theme/-/sanity-plugin-light-theme-1.0.1.tgz#b0614d52ab6474a636a6449d98b61b831deda461"
 
 sanity-plugin-media@^0.2.13:
   version "0.2.13"

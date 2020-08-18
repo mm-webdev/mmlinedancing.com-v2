@@ -62,16 +62,6 @@ export default function Contact() {
           <Form.Label>Details</Form.Label>
           <Form.Control name="contactForm.Body" as="textarea" rows="5" onChange={handleChange}  required={true} />
         </Form.Group>
-
-        <Form.Group controlId="contactForm.CheckCopySend">
-          <Form.Check
-            type="checkbox"
-            label="Send a copy to me"
-            name="contactForm.CheckCopySend"
-            className="text-muted text-italic"
-            onChange={handleChange} 
-          />
-        </Form.Group>
         <Form.Group controlId="contactForm.Submit">
         <Button variant="primary" name="contactForm.Submit" type="submit" size="lg">Submit Contact Form</Button>
         </Form.Group>

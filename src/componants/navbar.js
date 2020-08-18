@@ -11,7 +11,6 @@ const Navigation = () => (
         <Nav.Link href="/timetable">Timetable</Nav.Link>
         <Nav.Link href="/dances">Dance List</Nav.Link>
         <Nav.Link href="/contact">Contact</Nav.Link>
-        <Nav.Link href="/admin">Admin</Nav.Link>
       </Nav>
     </Navbar.Collapse>
     <Navbar.Brand href="/">MM Line Dancing</Navbar.Brand>
