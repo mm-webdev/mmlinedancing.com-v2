@@ -16,7 +16,8 @@
     "@sanity/desk-tool",
     "media",
     "@sanity/color-input",
-    "light-theme"
+    "light-theme",
+    "@sanity/cli"
   ],
   "env": {
     "development": {
