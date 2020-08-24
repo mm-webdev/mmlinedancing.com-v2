@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-require('dotenv').config()
+require("dotenv").config()
 
 module.exports = {
   /* Your site config here */
@@ -14,7 +14,7 @@ module.exports = {
       options: {
         projectId: process.env.SANITY_PROJECT_ID,
         dataset: process.env.SANITY_DATASET,
-        token: process.env.SANITY_TOKEN
+        token: process.env.SANITY_TOKEN,
       },
     },
   ],

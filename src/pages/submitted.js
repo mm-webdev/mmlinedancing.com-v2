@@ -8,10 +8,10 @@ import Layout from "../componants/layout"
 
 const submitted = () => (
   <Layout>
-
-      <h1 className="display-3">
-        Thankyou for your enquiry. Your request has been submitted to Michelle directly, and she will get back to you as soon as she can.
-      </h1>
+    <h1 className="display-3">
+      Thankyou for your enquiry. Your request has been submitted to Michelle
+      directly, and she will get back to you as soon as she can.
+    </h1>
   </Layout>
 )
 

@@ -43,27 +43,58 @@ export default function Contact() {
       <Container as="heading">
         <h1 className="text-center">Contact Me</h1>
       </Container>
-      <Form 
+      <Form
         name="contactForm"
         action="/submitted/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}>
-        <Form.Control as="input" type="hidden" name="bot-field" onChange={handleChange} />
+        onSubmit={handleSubmit}
+      >
+        <Form.Control
+          as="input"
+          type="hidden"
+          name="bot-field"
+          onChange={handleChange}
+        />
         <Form.Group controlId="contactForm.EmailAddress">
           <Form.Label>Email address</Form.Label>
-          <Form.Control name="contactForm.EmailAddress" type="email" placeholder="name@example.com" onChange={handleChange} required={true} />
+          <Form.Control
+            name="contactForm.EmailAddress"
+            type="email"
+            placeholder="name@example.com"
+            onChange={handleChange}
+            required={true}
+          />
         </Form.Group>
         <Form.Group controlId="contactForm.Subject">
           <Form.Label>Subject</Form.Label>
-          <Form.Control name="contactForm.Subject" type="string" placeholder="RE: MM Line Dancing" onChange={handleChange} required={true} />
+          <Form.Control
+            name="contactForm.Subject"
+            type="string"
+            placeholder="RE: MM Line Dancing"
+            onChange={handleChange}
+            required={true}
+          />
         </Form.Group>
         <Form.Group controlId="contactForm.Body">
           <Form.Label>Details</Form.Label>
-          <Form.Control name="contactForm.Body" as="textarea" rows="5" onChange={handleChange}  required={true} />
+          <Form.Control
+            name="contactForm.Body"
+            as="textarea"
+            rows="5"
+            onChange={handleChange}
+            required={true}
+          />
         </Form.Group>
         <Form.Group controlId="contactForm.Submit">
-        <Button variant="primary" name="contactForm.Submit" type="submit" size="lg">Submit Contact Form</Button>
+          <Button
+            variant="primary"
+            name="contactForm.Submit"
+            type="submit"
+            size="lg"
+          >
+            Submit Contact Form
+          </Button>
         </Form.Group>
       </Form>
     </Layout>

@@ -9,9 +9,9 @@ import Layout from "../componants/layout"
 const fourOhFour = () => (
   <Layout>
     <h1 className="display-3">
-    You have reached an error page. Please choose another adventure from the
-        navigation menu.
-      </h1>
+      You have reached an error page. Please choose another adventure from the
+      navigation menu.
+    </h1>
   </Layout>
 )
 
