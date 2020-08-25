@@ -10,9 +10,12 @@ import "../stylesheets/theme.scss"
 import Layout from "../componants/layout"
 
 export default function Timetable() {
-  const sanity = useSanityData()
+  const timetables = useSanityData().allSanityTimetable.edges
+  console.log(JSON.stringify({timetables}));
   return (
+    
   <Layout>
+  
     <Container as="heading">
       <h1 className="text-center">Timetable</h1>
     </Container>
@@ -27,13 +30,15 @@ export default function Timetable() {
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>1. Example Name</td>
-        <td>Example Day & Time</td>
-        <td>Example Level</td>
-        <td>Example Location</td>
-        <td>Example Cost</td>
+      {timetables.map((timetable) => {
+      return <tr>
+        <td>{timetable.node.title}</td>
+        <td>{timetable.node.day}, {timetable.node.timeStart} to {timetable.node.timeEnd}</td>
+        <td>{timetable.node.level}</td>
+        <td>{timetable.node.location}</td>
+        <td>{timetable.node.cost}</td>
       </tr>
+      })}
       </tbody>
     </Table>
   </Layout>

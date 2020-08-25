@@ -56,24 +56,34 @@ export const useSanityData = () => {
           }
           aboutImageCaption
         }
-        sanityTimetable {
-          title
-          day
-          timeStart
-          timeEnd
-          level
-          location
-          cost
+        allSanityDances(sort: {fields: _createdAt}) {
+          edges {
+            node {
+              id
+              title
+              choreographer
+              songartist
+              level
+              youtube
+              file {
+                asset {
+                  path
+                }
+              }
+            }
+          }
         }
-        sanityDances {
-          title
-          songartist
-          level
-          choreographer
-          youtube
-          file {
-            asset {
-              path
+        allSanityTimetable(sort: {fields: _createdAt}) {
+          edges {
+            node {
+              id
+              title
+              day
+              timeStart
+              timeEnd
+              location
+              level
+              cost
             }
           }
         }

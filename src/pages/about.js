@@ -4,6 +4,7 @@ import { useSanityData } from "../hooks/useSanityData"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import Figure from 'react-bootstrap/Figure'
 
 // Importing componants
 import Layout from "../componants/layout"
@@ -21,11 +22,14 @@ export default function About() {
           <p className="text-left p-2 text-about"><PortableText blocks={sanity.sanitySettings.aboutBlurb} /></p>
         </Col>
         <Col lg={4}>
-          <img
-            className="p-2 m-2 border border-primary rounded img-fluid"
+        <Figure className="p-2 m-2 border border-primary rounded">
+          <Figure.Image
+            className="img-fluid"
             src={sanity.sanitySettings.aboutImage.asset.fluid.src}
             alt={sanity.sanitySettings.aboutImageCaption}
           />
+          <Figure.Caption className="text-center font-italic tiny">{sanity.sanitySettings.aboutImageCaption}</Figure.Caption>
+          </Figure>
         </Col>
       </Row>
     </Container>
