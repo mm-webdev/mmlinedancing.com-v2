@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "mmlinedancing.com"
+    "name": "mmlinedancing.com",
+    "basePath": "/admin"
   },
   "api": {
     "projectId": "u97bco11",
