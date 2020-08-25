@@ -28,6 +28,5 @@ export default function Index() {
         </Row>
       </Container>
     </Layout>
-    
   )
 }

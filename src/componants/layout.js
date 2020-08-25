@@ -9,10 +9,10 @@ import "../stylesheets/theme.scss"
 
 export default function Layout({ children }) {
   return (
-    <body>
+    <div className="screen">
       <Navigation />
       <Container as="main">{children}</Container>
       <Footer />
-    </body>
+    </div>
   )
 }

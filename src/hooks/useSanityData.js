@@ -4,7 +4,7 @@ export const useSanityData = () => {
   const sanity = useStaticQuery(
     graphql`
       query SanityData {
-        sanitySettings(_id: {eq: "settings"}) {
+        sanitySettings(_id: { eq: "settings" }) {
           colorMain {
             hex
           }
@@ -56,7 +56,7 @@ export const useSanityData = () => {
           }
           aboutImageCaption
         }
-        allSanityDances(sort: {fields: _createdAt}) {
+        allSanityDances(sort: { fields: _createdAt }) {
           edges {
             node {
               id
@@ -73,7 +73,7 @@ export const useSanityData = () => {
             }
           }
         }
-        allSanityTimetable(sort: {fields: _createdAt}) {
+        allSanityTimetable(sort: { fields: _createdAt }) {
           edges {
             node {
               id

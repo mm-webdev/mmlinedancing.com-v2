@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import library from "../fontawesome"
 
 const Footer = () => (
-  <Nav as="footer" className="justify-content-center" variant="light">
+  <div as="footer">
     <Nav.Link href="https://www.facebook.com">
       <FontAwesomeIcon icon={["fab", "facebook"]} />
     </Nav.Link>
@@ -15,7 +15,7 @@ const Footer = () => (
     <Nav.Link href="https://www.instagram.com">
       <FontAwesomeIcon icon={["fab", "instagram"]} />
     </Nav.Link>
-  </Nav>
+  </div>
 )
 
 export default Footer
