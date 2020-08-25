@@ -35,6 +35,18 @@ export const useSanityData = () => {
             facode
           }
           title
+          aboutBlurb {
+            _key
+            _type
+            style
+            list
+            _rawChildren
+            children {
+              _key
+              _type
+              text
+            }
+          }
           aboutImage {
             asset {
               fluid {
