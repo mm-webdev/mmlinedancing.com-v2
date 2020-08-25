@@ -12,7 +12,8 @@
     "build": "sanity build public -y",
     "help": "sanity help",
     "docs": "sanity docs",
-    "manage": "sanity manage"
+    "manage": "sanity manage",
+    "graphql": "sanity graphql deploy -y --playground"
   },
   "keywords": [
     "sanity"
