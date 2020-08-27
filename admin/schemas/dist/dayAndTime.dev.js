@@ -64,21 +64,28 @@ var _default = {
     type: 'string',
     description: 'Choose what time the class ends',
     inputComponent: _TimeInput["default"]
+  }, {
+    name: "active",
+    title: "Active",
+    type: "boolean",
+    layout: "checkbox"
   }],
   // 8. Define how the dayAndTime object will render in the Studio 
   preview: {
     select: {
       day: 'day',
       opensAt: 'opensAt',
-      closesAt: 'closesAt'
+      closesAt: 'closesAt',
+      active: 'active'
     },
     prepare: function prepare(_ref) {
       var day = _ref.day,
           opensAt = _ref.opensAt,
-          closesAt = _ref.closesAt;
+          closesAt = _ref.closesAt,
+          active = _ref.active;
       return {
-        title: day,
-        subtitle: "".concat(opensAt, " - ").concat(closesAt)
+        title: "".concat(day, " (").concat(opensAt, " - ").concat(closesAt, ")"),
+        subtitle: "Active: ".concat(active)
       };
     }
   }

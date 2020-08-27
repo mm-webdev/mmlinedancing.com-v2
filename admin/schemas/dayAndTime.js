@@ -53,6 +53,12 @@ export default {
       type: 'string',
       description: 'Choose what time the class ends',
       inputComponent: TimeInput
+    },
+    {
+      name: "active",
+      title: "Active",
+      type: "boolean",
+      layout: "checkbox"
     }
   ],
 
@@ -61,12 +67,13 @@ export default {
     select: {
       day: 'day',
       opensAt: 'opensAt',
-      closesAt: 'closesAt'
+      closesAt: 'closesAt',
+      active: 'active'
     },
-    prepare({day, opensAt, closesAt}) {
+    prepare({day, opensAt, closesAt, active}) {
       return {
-        title: day,
-        subtitle: `${opensAt} - ${closesAt}`
+        title: `${day} (${opensAt} - ${closesAt})`,
+        subtitle: `Active: ${active}`
       }
     }
   }
