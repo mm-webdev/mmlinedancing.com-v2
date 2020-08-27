@@ -32,7 +32,7 @@ export default {
       type: "array",
       of: [{ type: "nav" }],
       collapsible: true,
-      collapsed: true,
+      collapsed: true
     },
     {
       title: "Social Network Links",
@@ -40,18 +40,28 @@ export default {
       type: "array",
       of: [{ type: "socials" }],
       collapsible: true,
-      collapsed: true,
+      collapsed: true
     },
     {
       title: "About Page Image",
       name: "aboutImage",
       type: "image",
+      fields: [
+        {
+          name: 'caption',
+          type: 'string',
+          title: 'Caption',
+          options: {
+            isHighlighted: true
+          }
+        },
+      ]
     },
-    {
-      name: "aboutImageCaption",
-      type: "string",
-      title: "About Page Image Caption",
-    },
+    // {
+    //   name: "aboutImageCaption",
+    //   type: "string",
+    //   title: "About Page Image Caption",
+    // },
     {
       title: "About Blurb",
       name: "aboutBlurb",

@@ -7,8 +7,9 @@ import socials from "./socials"
 import settings from "./settings"
 import timetable from "./timetable"
 import dances from "./dances"
+import dayAndTime from "./dayAndTime"
 
 export default createSchema({
   name: "default",
-  types: schemaTypes.concat([settings, timetable, dances, nav, socials]),
+  types: schemaTypes.concat([settings, timetable, dances, nav, socials, dayAndTime]),
 })

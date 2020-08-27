@@ -2,7 +2,7 @@ export default {
   title: "Social Network Links",
   name: "socials",
   type: "object",
-  __experimental_actions: ["update", "publish" /* 'create', 'delete' */],
+  // __experimental_actions: ["update", "publish" /* 'create', 'delete' */],
   fields: [
     {
       title: "Social Network",

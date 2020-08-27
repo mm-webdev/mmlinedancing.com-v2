@@ -13,20 +13,12 @@ var _default = {
     name: "title",
     type: "string"
   }, {
-    title: "Day of the Week",
-    name: "day",
-    type: "string",
-    options: {
-      list: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    }
-  }, {
-    title: "Start Time",
-    name: "timeStart",
-    type: "string"
-  }, {
-    title: "End Time",
-    name: "timeEnd",
-    type: "string"
+    title: 'Day and Time',
+    name: 'scheduledDayAndTime',
+    type: 'array',
+    of: [{
+      type: 'dayAndTime'
+    }]
   }, {
     title: "Level",
     name: "level",
