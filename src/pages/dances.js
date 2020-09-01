@@ -28,12 +28,14 @@ export default function Dances() {
             return (
               <tr>
                 <td>{dance.node.title}</td>
-                <td>
-                  {dance.node.choreographer}
-                </td>
+                <td>{dance.node.choreographer}</td>
                 <td>{dance.node.songartist}</td>
                 <td>{dance.node.level}</td>
-                <td>{dance.node.youtube}<br />{dance.node.file.asset.path}</td>
+                <td>
+                  {dance.node.youtube}
+                  <br />
+                  {dance.node.file.asset.path}
+                </td>
               </tr>
             )
           })}

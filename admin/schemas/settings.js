@@ -1,7 +1,9 @@
+
 export default {
   title: "Site Settings",
   name: "settings",
   type: "document",
+  // icon: MdSettings,
   __experimental_actions: ["update", "publish" /* 'create', 'delete' */],
   fields: [
     {
@@ -32,7 +34,7 @@ export default {
       type: "array",
       of: [{ type: "nav" }],
       collapsible: true,
-      collapsed: true
+      collapsed: true,
     },
     {
       title: "Social Network Links",
@@ -40,12 +42,12 @@ export default {
       type: "array",
       of: [{ type: "socials" }],
       collapsible: true,
-      collapsed: true
+      collapsed: true,
     },
     {
       title: "About Page Image",
       name: "aboutImage",
-      type: "image"
+      type: "image",
     },
     {
       name: "aboutImageCaption",

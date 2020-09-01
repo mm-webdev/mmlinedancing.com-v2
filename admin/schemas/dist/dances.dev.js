@@ -4,18 +4,35 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
+
+var _md = require("react-icons/md");
+
 var _default = {
   title: "Dance Steps",
   name: "dances",
   type: "document",
+  icon: _md.MdQueueMusic,
   fields: [{
     title: "Dance Name",
     name: "title",
-    type: "string"
+    type: "string",
+    validation: function validation(Rule) {
+      return Rule.required();
+    }
+  }, {
+    title: "Day and Time",
+    name: "testAssignedDayAndTime",
+    type: "array",
+    of: [{
+      type: "testDayAndTime"
+    }]
   }, {
     title: "Choreographer",
     name: "choreographer",
-    type: "string"
+    type: "string",
+    validation: function validation(Rule) {
+      return Rule.required();
+    }
   }, {
     title: "Song & Artist",
     name: "songartist",
@@ -26,6 +43,9 @@ var _default = {
     type: "string",
     options: {
       list: ["Beginner", "Intermediate", "Advanced"]
+    },
+    validation: function validation(Rule) {
+      return Rule.required();
     }
   }, {
     title: "File Upload",
@@ -35,7 +55,7 @@ var _default = {
   }, {
     title: "Youtube Link",
     name: "youtube",
-    type: "string"
+    type: "url"
   }]
 };
 exports["default"] = _default;

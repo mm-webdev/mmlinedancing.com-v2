@@ -71,3 +71,7 @@ yarn-error.log
 # Lock files
 package-lock.json
 yarn-lock.json
+
+# VS Code environment settings
+
+.vscode
