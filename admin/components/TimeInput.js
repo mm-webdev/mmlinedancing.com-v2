@@ -6,6 +6,7 @@ import { withDocument } from "part:@sanity/form-builder"
 import FormField from "part:@sanity/components/formfields/default"
 import PatchEvent, { set, unset } from "part:@sanity/form-builder/patch-event"
 
+
 // Transform hours and minutes to a formatted time string
 const outgoingValue = (hours, minutes) =>
   `${padStart(hours, 2, "0")}:${padStart(minutes, 2, "0")}`
@@ -35,7 +36,6 @@ class TimeInput extends React.Component {
     }).isRequired,
     value: PropTypes.string,
     onChange: PropTypes.func.isRequired
-    // militaryTime: PropTypes.bool.false
   }
 
   timeInput = React.createRef()
@@ -66,6 +66,7 @@ class TimeInput extends React.Component {
           minutes={minutes}
           onChange={this.handleTimeChange}
           ref={this.timeInput}
+          militaryTime={false}
         />
       </FormField>
     )

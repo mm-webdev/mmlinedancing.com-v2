@@ -21,14 +21,12 @@ var _dances = _interopRequireDefault(require("./dances"));
 
 var _dayAndTime = _interopRequireDefault(require("./dayAndTime"));
 
-var _testDayAndTime = _interopRequireDefault(require("./testDayAndTime"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 // My schema types below
 var _default = (0, _schemaCreator["default"])({
   name: "default",
-  types: _schemaType["default"].concat([_settings["default"], _timetable["default"], _dances["default"], _nav["default"], _socials["default"], _dayAndTime["default"], _testDayAndTime["default"]])
+  types: _schemaType["default"].concat([_settings["default"], _timetable["default"], _dances["default"], _nav["default"], _socials["default"], _dayAndTime["default"]])
 });
 
 exports["default"] = _default;

@@ -20,13 +20,6 @@ var _default = {
       return Rule.required();
     }
   }, {
-    title: "Day and Time",
-    name: "testAssignedDayAndTime",
-    type: "array",
-    of: [{
-      type: "testDayAndTime"
-    }]
-  }, {
     title: "Choreographer",
     name: "choreographer",
     type: "string",

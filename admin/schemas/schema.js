@@ -8,7 +8,6 @@ import settings from "./settings"
 import timetable from "./timetable"
 import dances from "./dances"
 import dayAndTime from "./dayAndTime"
-import testDayAndTime from "./testDayAndTime"
 
 export default createSchema({
   name: "default",
@@ -18,7 +17,6 @@ export default createSchema({
     dances,
     nav,
     socials,
-    dayAndTime,
-    testDayAndTime
+    dayAndTime
   ]),
 })

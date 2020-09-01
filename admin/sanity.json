@@ -14,8 +14,7 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "@sanity/color-input",
-    "nyancat-spinner",
-    "dark-mode"
+    "nyancat-spinner"
   ],
   "env": {
     "development": {
