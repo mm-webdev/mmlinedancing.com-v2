@@ -11,38 +11,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 // 1. Import the TimeInput react component
 // 2. List of days the editor may choose from
-var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]; // 3. Validate function which is invoked on user input
-
-var verifyInput = function verifyInput(dayAndTime) {
-  var day = dayAndTime.day,
-      opensAt = dayAndTime.opensAt,
-      closesAt = dayAndTime.closesAt;
-
-  if (!day) {
-    return "Please select a day";
-  }
-
-  if (!opensAt) {
-    return "Choose what time the class starts";
-  }
-
-  if (!closesAt) {
-    return "Choose what time the class finishes";
-  }
-
-  return opensAt < closesAt ? true : "Probably best to start the class before you finish it on ".concat(day, ".");
-};
-
+var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 var _default = {
   name: "dayAndTime",
   title: "Day and Time",
   type: "object",
-  // 4. Perform validation
-  validation: function validation(Rule) {
-    return Rule.custom(verifyInput);
-  },
   fields: [{
-    // 5. Enable editors to input a string from a predefined list (days)
     name: "day",
     title: "Day",
     type: "string",
@@ -50,19 +24,28 @@ var _default = {
       list: days
     }
   }, {
-    // 6. Enable editors to input a point in time using a custom input component
     name: "opensAt",
     title: "Start time",
     type: "string",
-    inputComponent: _TimeCleave["default"]
+    inputComponent: _TimeCleave["default"],
+    validation: function validation(Rule) {
+      return [Rule.required().regex(/^(1[0-2]|0?[1-9]):[0-5][0-9](am|pm)$/i, {
+        name: "time",
+        invert: false
+      }).error("Pattern: \(h\)h:mm am/pm")];
+    }
   }, {
-    // 7. Same time input as above, but assigned to a different field
     name: "closesAt",
     title: "End time",
     type: "string",
-    inputComponent: _TimeCleave["default"]
+    inputComponent: _TimeCleave["default"],
+    validation: function validation(Rule) {
+      return [Rule.required().regex(/^(1[0-2]|0?[1-9]):[0-5][0-9](am|pm)$/i, {
+        name: "time",
+        invert: false
+      }).error("Pattern: \(h\)h:mm am/pm")];
+    }
   }],
-  // 8. Define how the dayAndTime object will render in the Studio
   preview: {
     select: {
       day: "day",
