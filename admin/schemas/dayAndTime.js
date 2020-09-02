@@ -1,7 +1,6 @@
-// 1. Import the TimeInput react component
+import { MdAlarmAdd } from "react-icons/md";
 import TimeCleave from "../components/TimeCleave"
 
-// 2. List of days the editor may choose from
 const days = [
   "Monday",
   "Tuesday",
@@ -16,6 +15,7 @@ export default {
   name: "dayAndTime",
   title: "Day and Time",
   type: "object",
+  icon: MdAlarmAdd,
   fields: [
     {
       name: "day",

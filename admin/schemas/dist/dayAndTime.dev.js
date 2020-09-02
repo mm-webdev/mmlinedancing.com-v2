@@ -5,17 +5,18 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
+var _md = require("react-icons/md");
+
 var _TimeCleave = _interopRequireDefault(require("../components/TimeCleave"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-// 1. Import the TimeInput react component
-// 2. List of days the editor may choose from
 var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 var _default = {
   name: "dayAndTime",
   title: "Day and Time",
   type: "object",
+  icon: _md.MdAlarmAdd,
   fields: [{
     name: "day",
     title: "Day",
