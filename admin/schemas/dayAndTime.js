@@ -1,5 +1,5 @@
 // 1. Import the TimeInput react component
-import TimeInput from "../components/TimeInput"
+import TimeCleave from "../components/TimeCleave"
 
 // 2. List of days the editor may choose from
 const days = [
@@ -43,7 +43,6 @@ export default {
       name: "day",
       title: "Day",
       type: "string",
-      description: "Select day of week",
       options: {
         list: days,
       },
@@ -53,17 +52,15 @@ export default {
       name: "opensAt",
       title: "Start time",
       type: "string",
-      description: "Choose what time the class starts",
-      inputComponent: TimeInput,
+      inputComponent: TimeCleave,
     },
     {
       // 7. Same time input as above, but assigned to a different field
       name: "closesAt",
       title: "End time",
       type: "string",
-      description: "Choose what time the class ends",
-      inputComponent: TimeInput,
-    },
+      inputComponent: TimeCleave,
+    }
   ],
 
   // 8. Define how the dayAndTime object will render in the Studio
@@ -71,7 +68,7 @@ export default {
     select: {
       day: "day",
       opensAt: "opensAt",
-      closesAt: "closesAt",
+      closesAt: "closesAt"
     },
     prepare({ day, opensAt, closesAt }) {
       return {

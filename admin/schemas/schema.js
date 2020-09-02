@@ -9,6 +9,7 @@ import timetable from "./timetable"
 import dances from "./dances"
 import dayAndTime from "./dayAndTime"
 
+
 export default createSchema({
   name: "default",
   types: schemaTypes.concat([
