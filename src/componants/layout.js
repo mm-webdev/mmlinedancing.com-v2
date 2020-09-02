@@ -9,7 +9,7 @@ import "../stylesheets/theme.scss"
 
 export default function Layout({ children }) {
   return (
-    <div className="screen">
+    <div>
       <Navigation />
       <Container as="main">{children}</Container>
       <Footer />

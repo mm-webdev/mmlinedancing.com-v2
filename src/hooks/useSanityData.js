@@ -56,37 +56,6 @@ export const useSanityData = () => {
           }
           aboutImageCaption
         }
-        allSanityDances(sort: { fields: _createdAt }) {
-          edges {
-            node {
-              id
-              title
-              choreographer
-              songartist
-              level
-              youtube
-              file {
-                asset {
-                  path
-                }
-              }
-            }
-          }
-        }
-        allSanityTimetable(sort: { fields: _createdAt }) {
-          edges {
-            node {
-              id
-              title
-              day
-              timeStart
-              timeEnd
-              location
-              level
-              cost
-            }
-          }
-        }
       }
     `
   )

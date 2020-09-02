@@ -9949,12 +9949,15 @@ h3 {
   }
 }
 footer {
-  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #663399;
 }
 
 footer a {
   color: #b38cd9;
-  font-size: 1em !important;
+  font-size: 1.5em !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9967,9 +9970,4 @@ th {
   color: #8c53c6;
   border-color: #663399;
   font-size: larger;
-}
-
-.screen {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }

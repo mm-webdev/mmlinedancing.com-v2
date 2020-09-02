@@ -25,12 +25,15 @@ $lighter: lighten($primary,30%);
 $darker: darken($primary,30%);
 
 footer {
-    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: $primary;
 }
 
 footer a {
     color: $lighter;
-    font-size: 1em !important;
+    font-size: 1.5em !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,8 +47,3 @@ th {
     border-color: $primary;
     font-size: larger;
 }
-
-.screen {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-  }
