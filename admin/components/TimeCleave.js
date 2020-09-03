@@ -15,12 +15,12 @@ class TimeCleave extends React.Component {
       description: PropTypes.string,
     }).isRequired,
     value: PropTypes.string,
-    onChange: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired,
   }
-  
+
   timeCleave = React.createRef()
 
-  onTimeFieldChange = (event) => {
+  onTimeFieldChange = event => {
     const { onChange } = this.props
     const timeAsString = event.target.value
     onChange(createPatchFrom(timeAsString))
@@ -30,11 +30,11 @@ class TimeCleave extends React.Component {
     const { type, value } = this.props
     return (
       <FormField label={type.title} description={type.description}>
-        <Cleave placeholder="h:mm am/pm"
-            value={value}
-            options={({ time: true }, { timeFormat: "12" })}
-            // onFocus={this.onTimeFieldFocus}
-            onChange={this.onTimeFieldChange}
+        <Cleave
+          placeholder="h:mm am/pm"
+          value={value}
+          options={({ time: true }, { timeFormat: "12" })}
+          onChange={this.onTimeFieldChange}
         />
       </FormField>
     )

@@ -1,4 +1,4 @@
-import { MdAlarmAdd } from "react-icons/md";
+import { MdAlarmAdd } from "react-icons/md"
 import TimeCleave from "../components/TimeCleave"
 
 const days = [
@@ -31,14 +31,13 @@ export default {
       type: "string",
       inputComponent: TimeCleave,
       validation: Rule => [
-        Rule.required().regex(
-          /^(1[0-2]|0?[1-9]):[0-5][0-9](am|pm)$/i,
-          {
+        Rule.required()
+          .regex(/^(1[0-2]|0?[1-9]):[0-5][0-9](am|pm)$/i, {
             name: "time",
-            invert: false
-          }
-        ).error("Pattern: \(h\)h:mm am/pm")
-      ]
+            invert: false,
+          })
+          .error("Pattern: (h)h:mm am/pm"),
+      ],
     },
     {
       name: "closesAt",
@@ -46,22 +45,21 @@ export default {
       type: "string",
       inputComponent: TimeCleave,
       validation: Rule => [
-        Rule.required().regex(
-          /^(1[0-2]|0?[1-9]):[0-5][0-9](am|pm)$/i,
-          {
+        Rule.required()
+          .regex(/^(1[0-2]|0?[1-9]):[0-5][0-9](am|pm)$/i, {
             name: "time",
-            invert: false
-          }
-        ).error("Pattern: \(h\)h:mm am/pm")
-      ]
-    }
+            invert: false,
+          })
+          .error("Pattern: (h)h:mm am/pm"),
+      ],
+    },
   ],
 
   preview: {
     select: {
       day: "day",
       opensAt: "opensAt",
-      closesAt: "closesAt"
+      closesAt: "closesAt",
     },
     prepare({ day, opensAt, closesAt }) {
       return {

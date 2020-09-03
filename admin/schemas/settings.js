@@ -1,4 +1,3 @@
-
 export default {
   title: "Site Settings",
   name: "settings",
@@ -16,6 +15,12 @@ export default {
       name: "logo",
       type: "image",
       description: "Logo loaded on front page of site",
+    },
+    {
+      title: "Front Page Text",
+      name: "indexByline",
+      type: "text",
+      description: "Text appears under the logo on the home page of mmlinedancing.com"
     },
     {
       title: "Favicon",

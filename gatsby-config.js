@@ -17,5 +17,8 @@ module.exports = {
         token: process.env.SANITY_TOKEN,
       },
     },
+    // {
+    //   plugins: [`gatsby-plugin-react-helmet`],
+    // },
   ],
 }
