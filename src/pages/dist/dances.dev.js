@@ -2,10 +2,8 @@
 // import { useSanityData } from "../hooks/useSanityData"
 // import Container from "react-bootstrap/Container"
 // import Table from "react-bootstrap/Table"
-
 // // Importing componants
 // import Layout from "../componants/layout"
-
 // export default function Dances() {
 //   const dances = useSanityData().allSanityDances.edges
 //   return (
@@ -44,3 +42,4 @@
 //     </Layout>
 //   )
 // }
+"use strict";
