@@ -1,4 +1,4 @@
-import { MdEventAvailable } from "react-icons/md";
+import { MdEventAvailable } from "react-icons/md"
 
 export default {
   title: "Classes",
@@ -10,7 +10,7 @@ export default {
       title: "Class Name",
       name: "title",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: Rule => Rule.required(),
     },
     {
       title: "Day and Time",
@@ -23,7 +23,7 @@ export default {
       ],
       description:
         "This records the class day and time. Please note you can have multiple days/times recorded here, they will all appear as though that class is on for both those days/times. You can delete any you don't need.",
-      validation: (Rule) => [
+      validation: Rule => [
         Rule.required().error("You need a day and time value."),
         Rule.unique().error(
           "You have entered the same value twice, please delete one of these values, you only need it entered once."
@@ -37,7 +37,7 @@ export default {
       options: {
         list: ["Beginner", "Intermediate", "Advanced"],
       },
-      validation: (Rule) => Rule.required(),
+      validation: Rule => Rule.required(),
     },
     {
       title: "Location",
@@ -59,15 +59,15 @@ export default {
   ],
   preview: {
     select: {
-      title: 'title',
-      level: 'level'
+      title: "title",
+      level: "level",
     },
     prepare(selection) {
-      const {title, level} = selection
+      const { title, level } = selection
       return {
         title: title,
-        subtitle: `Level: ${level}`
+        subtitle: `Level: ${level}`,
       }
-    }
-  }
-};
+    },
+  },
+}

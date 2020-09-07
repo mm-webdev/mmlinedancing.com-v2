@@ -11,9 +11,7 @@ export default function Navigation() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
           {navlinks.map(link => {
-            return (
-              <Nav.Link href={link.path}>{link.name}</Nav.Link>
-              )
+            return <Nav.Link href={link.path}>{link.name}</Nav.Link>
           })}
         </Nav>
       </Navbar.Collapse>
