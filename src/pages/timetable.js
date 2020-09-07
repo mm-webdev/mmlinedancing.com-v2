@@ -23,22 +23,23 @@ export default function Timetable() {
           const dateValue = scheduledClass._updatedAt.toLocaleString()
           const classTimes = scheduledClass.scheduledDayAndTime
           return (
-            <Card>
-              <Card.Header>
-                <Card.Title className="font-weight-bolder align-right">
+            <Card className="mb-2">
+              <Card.Header className="text-white bg-primary">
+                <Card.Title className="font-weight-bolder">
                   {scheduledClass.title}
                 </Card.Title>
               </Card.Header>
-              <Card.Body>
-                {/* <Card.Subtitle>Level: {scheduledClass.level}</Card.Subtitle>
-                <Card.Text>
-                  Cost: {scheduledClass.cost}
-                  
-                </Card.Text> */}
-                <ListGroup className="text-center">
+              <Card.Body className="p-0">
+                <Card.Text className="p-3 mb-0 lead">
+                  Level: {scheduledClass.level}
+                  <p />
+                  Cost: {scheduledClass.cost}<p />
+                  Location: {scheduledClass.location}
+                </Card.Text>
+                <ListGroup className="p-0 text-center" variant="flush">
                   {classTimes.map(classDayAndTimeListing => {
                     return (
-                      <ListGroup.Item variant="primary">
+                      <ListGroup.Item variant="primary" className="py-1 px-3">
                         {classDayAndTimeListing.day} ({" "}
                         {classDayAndTimeListing.opensAt} to{" "}
                         {classDayAndTimeListing.closesAt})
@@ -46,9 +47,12 @@ export default function Timetable() {
                     )
                   })}
                 </ListGroup>
+                <Card.Text className="p-3">
+                
+                  {scheduledClass.notes}
+                </Card.Text>
               </Card.Body>
-
-              <Card.Footer variant="primary">
+              <Card.Footer>
                 <small className="text-muted">
                   Last updated on {dateValue}
                 </small>
