@@ -32,8 +32,8 @@ export default function Timetable() {
               <Card.Body className="p-0">
                 <Card.Text className="p-3 mb-0 lead">
                   Level: {scheduledClass.level}
-                  <p />
-                  Cost: {scheduledClass.cost}<p />
+                  <br />
+                  Cost: {scheduledClass.cost}<br />
                   Location: {scheduledClass.location}
                 </Card.Text>
                 <ListGroup className="p-0 text-center" variant="flush">
@@ -47,7 +47,7 @@ export default function Timetable() {
                     )
                   })}
                 </ListGroup>
-                <Card.Text className="p-3">
+                <Card.Text className="p-3 lead">
                 
                   {scheduledClass.notes}
                 </Card.Text>

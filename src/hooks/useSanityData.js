@@ -4,7 +4,7 @@ export const useSanityData = () => {
   const sanity = useStaticQuery(
     graphql`
       query SanityData {
-        sanitySettings(_id: { eq: "settings" }) {
+        sanitySettings(_id: {eq: "settings"}) {
           colorMain {
             hex
           }
@@ -63,21 +63,13 @@ export const useSanityData = () => {
             }
           }
           nodes {
-            _key
-            _rawScheduledDayAndTime
-            _type
-            _rev
-            _createdAt
-            _id
-            _updatedAt
+            _updatedAt(formatString: "DD MMM YYYY")
             cost
             id
             level
             location
             notes
             scheduledDayAndTime {
-              _key
-              _type
               closesAt
               day
               opensAt
@@ -86,53 +78,18 @@ export const useSanityData = () => {
           }
         }
         allSanityDances {
-          edges {
-            node {
-              id
-              choreographer
-              level
-              songartist
-              title
-              file {
-                asset {
-                  path
-                  url
-                  title
-                  source {
-                    _key
-                    _type
-                    id
-                    name
-                    url
-                  }
-                  size
-                  sha1hash
-                  originalFilename
-                  mimeType
-                  label
-                  id
-                  extension
-                  description
-                  assetId
-                  _updatedAt
-                  _type
-                  _rev
-                  _rawSource
-                  _key
-                  _id
-                  _createdAt
-                }
-                _key
-                _rawAsset
-                _type
+          nodes {
+            file {
+              asset {
+                url
+                originalFilename
               }
-              _id
-              _key
-              _createdAt
-              _rawFile
-              _updatedAt
-              youtube
             }
+            choreographer
+            level
+            songartist
+            title
+            youtube
           }
         }
       }

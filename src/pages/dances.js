@@ -1,18 +1,50 @@
 import React from "react"
-// import { useSanityData } from "../hooks/useSanityData"
+import { useSanityData } from "../hooks/useSanityData"
 import Container from "react-bootstrap/Container"
-import Table from "react-bootstrap/Table"
+import Card from "react-bootstrap/Card"
+import ListGroup from "react-bootstrap/ListGroup"
+import CardColumns from "react-bootstrap/CardColumns"
 
 // Importing componants
 import Layout from "../componants/layout"
 
 export default function Dances() {
-  // const dances = useSanityData().allSanityDances.edges
+  const dances = useSanityData().allSanityDances.nodes
   return (
     <Layout>
       <Container as="heading">
         <h1 className="text-center">Dances</h1>
       </Container>
+      <CardColumns>
+        {dances.map(danceSheet => {
+          return (
+            <Card className="mb-2">
+            <Card.Header className="text-white bg-primary">
+                <Card.Title className="font-weight-bolder">
+                  {danceSheet.title}
+                </Card.Title>
+              </Card.Header>
+              <Card.Body className="p-0">
+              <Card.Text className="p-3 mb-0 lead">
+                  Level: {danceSheet.level}
+                  <br />
+                  Choreographer: {danceSheet.choreographer}<br />
+                  Song & Artist: {danceSheet.songartist}<br />
+                </Card.Text>
+                <ListGroup className="p-0 text-center" variant="flush">
+                
+            <ListGroup.Item variant="primary" className="py-1 px-3">
+              {danceSheet.youtube}
+            </ListGroup.Item>
+          
+                </ListGroup>
+              </Card.Body>
+            </Card>
+          )
+        })}
+      </CardColumns>
+
+
       {/* <Table responsive="md" bordered hover variant="primary">
         <thead>
           <tr>
