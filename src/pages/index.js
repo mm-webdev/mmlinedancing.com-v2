@@ -15,7 +15,7 @@ export default function Index() {
         <Image
           src={sanity.sanitySettings.logo.asset.fluid.src}
           alt="Logo"
-          className="mx-auto d-block"
+          className="mx-auto d-block logo-img"
           fluid
         />
         <Row className="mx-auto d-block">

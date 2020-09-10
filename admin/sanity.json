@@ -5,7 +5,7 @@
   },
   "api": {
     "projectId": "u97bco11",
-    "dataset": "production"
+    "dataset": "live"
   },
   "plugins": [
     "@sanity/base",
@@ -18,6 +18,9 @@
   ],
   "env": {
     "development": {
+      "api": {
+        "dataset": "dev"
+      },
       "plugins": ["@sanity/vision"]
     }
   },
