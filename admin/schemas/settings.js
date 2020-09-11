@@ -18,8 +18,9 @@ export default {
     },
     {
       title: "Front Page Text",
-      name: "indexByline",
-      type: "text",
+      name: "frontpagematter",
+      type: "array",
+      of: [{ type: "block" }],
       description:
         "Text appears under the logo on the home page of mmlinedancing.com",
     },

@@ -1,11 +1,19 @@
 {
   "root": true,
-  "project": {
-    "name": "mmlinedancing.com"
-  },
   "api": {
     "projectId": "u97bco11",
     "dataset": "live"
+  },
+  "env": {
+    "development": {
+      "api": {
+        "dataset": "live"
+      },
+      "plugins": ["@sanity/vision"]
+    }
+  },
+  "project": {
+    "name": "mmlinedancing.com"
   },
   "plugins": [
     "@sanity/base",
@@ -16,14 +24,6 @@
     "@sanity/color-input",
     "nyancat-spinner"
   ],
-  "env": {
-    "development": {
-      "api": {
-        "dataset": "dev"
-      },
-      "plugins": ["@sanity/vision"]
-    }
-  },
   "parts": [
     {
       "name": "part:@sanity/base/schema",

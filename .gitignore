@@ -75,3 +75,9 @@ yarn-lock.json
 # VS Code environment settings
 
 .vscode
+# Local Netlify folder
+.netlify
+
+# Dist files created during development
+admin/dist/
+admin/schemas/dist/
