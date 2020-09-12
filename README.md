@@ -10,11 +10,27 @@
 
 ## CMS setup
 
-<!-- *(List the steps for getting the CMS set up.)* -->
+Sanity.io has a Gatsby plugin, which is used in this project to help the import of data from the sanity.io based CMS to the Gatsby deployed website.
+
+In the gatsby-config.js file, you will see that this plugin is listed, and that the required data are environment variables. This has been setup as per the instructions found here: [Github - sanity-io/gatsby-source-sanity](https://github.com/sanity-io/gatsby-source-sanity#using-env-variables).
+
+You will need a .env file created in the root directory, with the following 3 variables:
+```.env
+SANITY_PROJECT_ID=abc123
+SANITY_DATASET=production
+SANITY_TOKEN=my-super-secret-token
+```
+
+All 3 variables can be found in your sanity.io dashboard.
 
 ## Additional setup
 
-<!-- *(List the steps for getting anything else set up. Example: Laravel Mix)* -->
+I am using 2 sanity datasets, which can be setup in the sanity.io dashboard.
+
+|Environment|Dataset|
+|--|--|
+|Production|`live`|
+|Development|`dev`|
 
 ## Files & directories
 
