@@ -4,9 +4,9 @@ import Nav from "react-bootstrap/Nav"
 import { useSanityData } from "../hooks/useSanityData"
 
 export default function Navigation() {
-  const navlinksDirty = useSanityData().sanitySettings.nav
-  const navlinks = navlinksDirty.filter (function (navlinksDirty) {
-    return navlinksDirty.hide === false
+  const navlinksDirty = useSanityData().allSanitySettings.nodes.nav
+  const navlinks = navlinksDirty.filter(function (navlinksDirty) {
+    return navlinksDirty.display = true
   })
   console.log(navlinks)
   console.log(navlinksDirty)

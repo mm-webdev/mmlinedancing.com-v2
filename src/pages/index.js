@@ -7,13 +7,16 @@ import Image from "react-bootstrap/Image"
 // Importing componants
 import Layout from "../componants/layout"
 
+
+
 export default function Index() {
-  const sanity = useSanityData()
+  const sanitySettings = useSanityData().allSanitySettings
+  console.log(JSON.stringify(sanitySettings))
   return (
     <Layout>
       <Container as="section" className="text-center">
         <Image
-          src={sanity.sanitySettings.logo.asset.fluid.src}
+          src="`${sanitySettings.nodes.logo.asset.fluid.src}`"
           alt="Logo"
           className="mx-auto d-block logo-img"
           fluid

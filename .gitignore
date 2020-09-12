@@ -81,3 +81,4 @@ yarn-lock.json
 # Dist files created during development
 admin/dist/
 admin/schemas/dist/
+src/hooks/dist/
