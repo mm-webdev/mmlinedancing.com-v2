@@ -20,7 +20,6 @@ export default function Timetable() {
       </Container>
       <CardColumns>
         {timetables.map(scheduledClass => {
-          const dateValue = scheduledClass._updatedAt.toLocaleString()
           const classTimes = scheduledClass.scheduledDayAndTime
           return (
             <Card className="mb-2">
@@ -33,7 +32,8 @@ export default function Timetable() {
                 <Card.Text className="p-3 mb-0 lead">
                   Level: {scheduledClass.level}
                   <br />
-                  Cost: {scheduledClass.cost}<br />
+                  Cost: {scheduledClass.cost}
+                  <br />
                   Location: {scheduledClass.location}
                 </Card.Text>
                 <ListGroup className="p-0 text-center" variant="flush">
@@ -48,13 +48,12 @@ export default function Timetable() {
                   })}
                 </ListGroup>
                 <Card.Text className="p-3 lead">
-                
                   {scheduledClass.notes}
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
                 <small className="text-muted">
-                  Last updated on {dateValue}
+                  Last updated: {scheduledClass._updatedAt}
                 </small>
               </Card.Footer>
             </Card>

@@ -15,6 +15,7 @@ Sanity.io has a Gatsby plugin, which is used in this project to help the import 
 In the gatsby-config.js file, you will see that this plugin is listed, and that the required data are environment variables. This has been setup as per the instructions found here: [Github - sanity-io/gatsby-source-sanity](https://github.com/sanity-io/gatsby-source-sanity#using-env-variables).
 
 You will need a .env file created in the root directory, with the following 3 variables:
+
 ```.env
 SANITY_PROJECT_ID=abc123
 SANITY_DATASET=production
@@ -27,10 +28,10 @@ All 3 variables can be found in your sanity.io dashboard.
 
 I am using 2 sanity datasets, which can be setup in the sanity.io dashboard.
 
-|Environment|Dataset|
-|--|--|
-|Production|`live`|
-|Development|`dev`|
+| Environment | Dataset |
+| ----------- | ------- |
+| Production  | `live`  |
+| Development | `dev`   |
 
 ## Files & directories
 

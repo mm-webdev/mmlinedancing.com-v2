@@ -38,15 +38,24 @@ footer a {
 
 h1, h2, h3, h4, h5, h6 {
     color: $primary;
-    font-weight: 600;
+    font-weight: 400;
 }
 
-th {
-    background-color: $primary;
-    color: $light;
-    border-color: $primary;
+.dance-steps-th {
+    @extend  .border, .border-primary, .d-none, .d-lg-flex, .m-1;
+    background-color: $lighter;
+    color: $black;
     font-size: larger;
 }
+
+.dance-steps-td {
+    @extend  .border, .border-primary, .m-1;
+}
+
+.dance-steps-tags {
+    @extend .d-md-inline, .d-lg-none, .h6, .text-primary;
+}
+
 
 .lead {
     font-family: Quicksand;

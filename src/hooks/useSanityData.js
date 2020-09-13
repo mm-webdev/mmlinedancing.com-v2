@@ -1,101 +1,101 @@
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby"
 
 export const useSanityData = () => {
   const sanity = useStaticQuery(
     graphql`
-      query SanityData {
-        allSanitySettings(filter: { _id: { eq: "settings" } }) {
-          nodes {
-            colorMain {
-              hex
-            }
-            favicon {
-              asset {
-                path
+      query mmlinedancing {
+        sanitySettings(_id: { eq: "settings" }) {
+          title
+          logo {
+            asset {
+              fluid {
+                src
               }
             }
-            logo {
-              asset {
-                fluid {
-                  src
-                }
-              }
-            }
-            nav {
+          }
+          frontpagematter {
+            style
+            list
+            children {
+              text
               _key
               _type
-              name
-              path
-              display
             }
-            socials {
-              _key
-              _type
-              title
+            _key
+            _type
+          }
+          favicon {
+            asset {
               url
-              facode
             }
+          }
+          colorMain {
+            hex
+          }
+          nav {
+            name
+            path
+            display
+          }
+          socials {
             title
-            aboutImage {
-              asset {
-                fluid {
-                  src
-                }
+            url
+            facode
+          }
+          aboutImage {
+            asset {
+              fluid {
+                src
               }
             }
-            aboutImageCaption
-            aboutBlurb {
+          }
+          aboutImageCaption
+          aboutBlurb {
+            children {
+              text
+              marks
               _key
               _type
-              style
-              list
-              _rawChildren
-              children {
-                _key
-                _type
-                text
-              }
             }
+            list
+            style
+            _key
+            _type
           }
         }
         allSanityTimetable {
-          edges {
-            node {
-              id
-            }
-          }
           nodes {
-            _updatedAt(formatString: "DD MMM YYYY")
-            cost
-            id
-            level
-            location
-            notes
+            title
             scheduledDayAndTime {
-              closesAt
               day
               opensAt
+              closesAt
             }
-            title
+            level
+            cost
+            location
+            notes
+            _updatedAt(fromNow: true)
           }
         }
         allSanityDances {
           nodes {
+            title
+            choreographer
+            songartist
+            level
             file {
+              _key
+              _type
               asset {
                 url
-                originalFilename
               }
             }
-            choreographer
-            level
-            songartist
-            title
             youtube
           }
         }
       }
     `
-  );
-  return sanity;
-};
+  )
+  return sanity
+}
